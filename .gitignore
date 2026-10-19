@@ -1,0 +1,11 @@
+# Dependências e arquivos locais de ambiente.
+node_modules/
+.env
+.env.*
+!.env.example
+
+# Arquivos temporários do sistema e ferramentas.
+*.log
+.DS_Store
+Thumbs.db
+.vercel/

@@ -1,0 +1,40 @@
+<!-- Informa ao navegador que este documento usa HTML moderno. -->
+<!doctype html>
+<!-- Define o idioma português e inicia no tema azul, salvo quando há preferência colorida. -->
+<html lang="pt-BR" data-map-theme="blue">
+<!-- Abre os metadados e os recursos necessários à página. -->
+<head>
+      <!-- Usa UTF-8 para exibir acentos corretamente. -->
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">   <!-- Adapta a largura ao dispositivo e considera as áreas seguras de celulares. -->
+
+  <meta name="theme-color" content="#101c2b">  <!-- Define a cor da interface do navegador associada à página. -->
+
+  <script>try{if(JSON.parse(localStorage.getItem('cs-map-settings-v1'))?.mapTheme==='colorful')document.documentElement.dataset.mapTheme='colorful';}catch{}</script>  <!-- Aplica a preferência de cores salva antes de pintar a interface; falhas de armazenamento são ignoradas. -->
+  <!-- Descreve a página para mecanismos de busca e compartilhamento. -->
+  <meta name="description" content="Explore sua região, acompanhe notícias e encontre pontos de apoio no mapa do Conexão Segura.">
+ 
+ <title>Conexão Segura </title> <!-- Define o título exibido na aba do navegador. -->
+
+  <link rel="icon" href="assets/favicon.png" type="image/svg+xml">
+    
+  <link rel="preconnect" href="https://tiles.openfreemap.org" crossorigin><!-- Antecipa a conexão com o provedor dos dados do mapa. -->
+
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.css">  <!-- Carrega os estilos dos controles e cards do MapLibre. -->
+ 
+  <link rel="stylesheet" href="styles.css">  <!-- Carrega os estilos básicos e responsivos da aplicação. -->
+  
+  <link rel="stylesheet" href="theme-city.css"> <!-- Aplica o layout e a aparência da maquete colorida. -->
+  
+  <link rel="stylesheet" href="theme-blue.css"> <!-- Sobrescreve as cores quando o tema azul está ativo; a ordem dos estilos importa. -->
+
+
+  <!-- Carrega o motor MapLibre após a leitura do HTML, preservando a ordem dos scripts defer. -->
+  <script defer src="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.js"></script>
+  <!-- Carrega a configuração pública antes de iniciar o aplicativo. -->
+  <script defer src="config.js"></script>
+  <!-- Executa o módulo principal; seus imports ligam o mapa aos dados e controles. -->
+  <script type="module" src="app.js"></script>
+<!-- Fecha a seção de metadados. -->
+</head>
