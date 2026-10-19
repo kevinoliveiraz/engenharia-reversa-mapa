@@ -38,3 +38,59 @@
   <script type="module" src="app.js"></script>
 <!-- Fecha a seção de metadados. -->
 </head>
+
+  <!-- Inicia a biblioteca invisível de ícones SVG reutilizados pela interface. -->
+  <svg class="icon-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+        <!-- Define o desenho vetorial do ícone de localização; o atributo d guarda os segmentos do traço. -->
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <!-- Define o desenho vetorial do ícone de mapa; o atributo d guarda os segmentos do traço. -->
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="m3 5 6-2 6 2 6-2v16l-6 2-6-2-6 2Zm6-2v16m6-14v16"/></symbol>
+    <!-- Define o desenho vetorial do ícone de notícias; o atributo d guarda os segmentos do traço. -->
+    <symbol id="i-news" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 7h8M8 11h3m-3 4h8m-3-4h3"/></symbol>
+    <!-- Define o desenho vetorial do ícone de busca; o atributo d guarda os segmentos do traço. -->
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <!-- Define o desenho vetorial do ícone de camadas; o atributo d guarda os segmentos do traço. -->
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 10 5-10 5L2 8Zm-9 9 9 5 9-5m-18 5 9 5 9-5"/></symbol>
+    <!-- Define o desenho vetorial do ícone de fechar; o atributo d guarda os segmentos do traço. -->
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <!-- Define o desenho vetorial do ícone de adicionar ou aproximar; o atributo d guarda os segmentos do traço. -->
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <!-- Define o desenho vetorial do ícone de afastar; o atributo d guarda os segmentos do traço. -->
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <!-- Define o desenho vetorial do ícone de localização atual; o atributo d guarda os segmentos do traço. -->
+    <symbol id="i-locate" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="3"/><path d="M12 1v4m0 14v4M1 12h4m14 0h4"/></symbol>
+    <!-- Define o desenho vetorial do ícone de direção da bússola; o atributo d guarda os segmentos do traço. -->
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="m12 3 8 18-8-5-8 5Z"/></symbol>
+    <!-- Define o desenho vetorial do ícone de iluminação; o atributo d guarda os segmentos do traço. -->
+    <symbol id="i-light" viewBox="0 0 24 24"><path d="M9 18h6m-5 3h4M8 14a6 6 0 1 1 8 0c-1 1-1 2-1 2H9s0-1-1-2Z"/></symbol>
+    <!-- Define o desenho vetorial do ícone de enchentes; o atributo d guarda os segmentos do traço. -->
+    <symbol id="i-water" viewBox="0 0 24 24"><path d="M2 17c3-4 5 4 8 0s5 4 8 0 4 0 4 0M2 21c3-4 5 4 8 0s5 4 8 0 4 0 4 0M12 2s-5 5-5 8a5 5 0 0 0 10 0c0-3-5-8-5-8Z"/></symbol>
+    <!-- Define o desenho vetorial do ícone de acessibilidade; o atributo d guarda os segmentos do traço. -->
+    <symbol id="i-access" viewBox="0 0 24 24"><circle cx="12" cy="4" r="2"/><path d="m4 8 8 2 8-2m-8 2v5m0 0-4 7m4-7 4 7"/></symbol>
+    <!-- Define o desenho vetorial do ícone de rede de apoio; o atributo d guarda os segmentos do traço. -->
+    <symbol id="i-support" viewBox="0 0 24 24"><circle cx="9" cy="6" r="3"/><circle cx="18" cy="8" r="2"/><path d="M3 21v-6a6 6 0 0 1 12 0v6m2-8a4 4 0 0 1 4 4v4M7 21v-5m5 5v-5"/></symbol>
+    <!-- Define o desenho vetorial do ícone de saúde; o atributo d guarda os segmentos do traço. -->
+    <symbol id="i-health" viewBox="0 0 24 24"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6Z"/></symbol>
+    <!-- Define o desenho vetorial do ícone de áreas verdes; o atributo d guarda os segmentos do traço. -->
+    <symbol id="i-tree" viewBox="0 0 24 24"><path d="m12 2 6 8h-3l6 8H3l6-8H6Zm0 16v5"/></symbol>
+    <!-- Define o desenho vetorial do ícone de percurso; o atributo d guarda os segmentos do traço. -->
+    <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="5" r="2"/><circle cx="18" cy="19" r="2"/><path d="M8 5h7a4 4 0 0 1 0 8H9a3 3 0 0 0 0 6h7"/></symbol>
+    <!-- Define o desenho vetorial do ícone de avançar; o atributo d guarda os segmentos do traço. -->
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+    <!-- Define o desenho vetorial do ícone de tempo; o atributo d guarda os segmentos do traço. -->
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></symbol>
+    <!-- Define o desenho vetorial do ícone de alerta; o atributo d guarda os segmentos do traço. -->
+    <symbol id="i-warning" viewBox="0 0 24 24"><path d="m12 3 10 18H2Z"/><path d="M12 9v5m0 3v1"/></symbol>
+    <!-- Define o desenho vetorial do ícone de atualizar; o atributo d guarda os segmentos do traço. -->
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 8a9 9 0 1 0 0 9m0-14v6h-6"/></symbol>
+    <!-- Define o desenho vetorial do ícone de link externo; o atributo d guarda os segmentos do traço. -->
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 3h7v7m0-7L10 14m0-10H4v16h16v-6"/></symbol>
+    <!-- Define o desenho vetorial do ícone de proteção; o atributo d guarda os segmentos do traço. -->
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 2 9 4v6c0 5-9 10-9 10S3 17 3 12V6Z"/><path d="m8 12 3 3 5-6"/></symbol>
+    <!-- Define o desenho vetorial do ícone de desenho de área; o atributo d guarda os segmentos do traço. -->
+    <symbol id="i-polygon" viewBox="0 0 24 24"><path d="m5 4 14 2 2 13-12 2-7-9Z"/><circle cx="5" cy="4" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="21" cy="19" r="2"/><circle cx="9" cy="21" r="2"/><circle cx="2" cy="12" r="2"/></symbol>
+    <!-- Define o desenho vetorial do ícone de excluir; o atributo d guarda os segmentos do traço. -->
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7m4-7v7"/></symbol>
+    <!-- Define o desenho vetorial do ícone de confirmar; o atributo d guarda os segmentos do traço. -->
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L20 5"/></symbol>
+  <!-- Fecha as definições e a biblioteca SVG. -->
